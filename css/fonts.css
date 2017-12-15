@@ -1,0 +1,29 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=0e7b8a91-96ba-4561-8710-ead12dc79416");
+	
+	@font-face{
+		font-family:"Optima LT W01 Roman";
+		src:url("Fonts/faef1464-e833-43ac-a2ee-7a4f5f3ab909.eot?#iefix");
+		src:url("Fonts/faef1464-e833-43ac-a2ee-7a4f5f3ab909.eot?#iefix") format("eot"),url("Fonts/776a385c-3d8b-4237-8d14-382015d9ff12.woff2") format("woff2"),url("Fonts/b72e728e-eac1-4261-ac86-579fa6ae4a0b.woff") format("woff"),url("Fonts/7d64c37c-83dc-4450-8781-17b619b16935.ttf") format("truetype"),url("Fonts/77b722e6-5ee7-40fe-aff2-0225df92206d.svg#77b722e6-5ee7-40fe-aff2-0225df92206d") format("svg");
+	}
+	@font-face{
+		font-family:"Optima LT W01 Italic";
+		src:url("Fonts/4d01aa23-599f-462f-ac29-14214b3125cd.eot?#iefix");
+		src:url("Fonts/4d01aa23-599f-462f-ac29-14214b3125cd.eot?#iefix") format("eot"),url("Fonts/e6dde7e6-8343-4366-9c66-dd15e81df199.woff2") format("woff2"),url("Fonts/a5e1e1fd-f4dc-41b2-b227-ecc948bb9c6d.woff") format("woff"),url("Fonts/e4f76f05-6722-4d59-bd67-5695010d0212.ttf") format("truetype"),url("Fonts/4d1f58b6-cb0a-49e4-97a4-c5fc13eb6123.svg#4d1f58b6-cb0a-49e4-97a4-c5fc13eb6123") format("svg");
+	}
+	@font-face{
+		font-family:"Trade Gothic LT W01 Extended";
+		src:url("Fonts/80bacd55-21c1-4d38-9941-54ce3c8922e7.eot?#iefix");
+		src:url("Fonts/80bacd55-21c1-4d38-9941-54ce3c8922e7.eot?#iefix") format("eot"),url("Fonts/4f458de2-59d7-4507-b9c4-5aed62c5febf.woff2") format("woff2"),url("Fonts/6f588c87-6adb-4ea9-964b-dc544f34ccbe.woff") format("woff"),url("Fonts/59b8bca1-7a53-4e0f-9786-57620b2094cc.ttf") format("truetype"),url("Fonts/5f80cbef-f87b-499c-a059-bcdb5548118e.svg#5f80cbef-f87b-499c-a059-bcdb5548118e") format("svg");
+	}
+	@font-face{
+		font-family:"Trade Gothic LT W01 Bold Ext";
+		src:url("Fonts/97a53a0a-5bd4-4ef3-87fd-13fe60daf933.eot?#iefix");
+		src:url("Fonts/97a53a0a-5bd4-4ef3-87fd-13fe60daf933.eot?#iefix") format("eot"),url("Fonts/4bf77dbf-9e1d-4b9c-927f-625e180e9016.woff2") format("woff2"),url("Fonts/3480b7c2-478a-4683-a465-48610e313ad5.woff") format("woff"),url("Fonts/bcda37e4-222a-4e9d-8649-61e2085fbe2b.ttf") format("truetype"),url("Fonts/12ac2b11-c918-43b2-bbc5-1db249aa4483.svg#12ac2b11-c918-43b2-bbc5-1db249aa4483") format("svg");
+	}
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/

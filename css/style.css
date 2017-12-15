@@ -1,0 +1,613 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	cursor: url("sources/cursor/red.png") 16 16, auto;
+}
+
+body {
+	background-color: #D8D8D8;
+	font-family: "Optima LT W01 Roman", Times New Roman, serif;
+	color: #0a0a0a;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-feature-settings: "kern" 1;
+	-moz-font-feature-settings: "kern" 1;
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	cursor: url("sources/cursor/black.png") 8 8, auto;
+	color: #0a0a0a;
+	text-decoration: none;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	transition: .2s ease;
+}
+
+a:hover {
+	color: #ff351a;
+}
+
+h1 {
+	display: inline;
+}
+
+.hyphen {
+	hyphens: auto;
+}
+
+.italic {
+	font-family: "Optima LT W01 Italic", Times New Roman, serif;
+	font-style: italic;
+}
+
+::selection {
+	color: #888583;
+	background: transparent;
+}
+
+
+/* Menu */
+
+.nav-bar {
+	position: fixed;
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: 9999;
+	transition: .4s ease;
+	-webkit-box-shadow: 0 10px 40px -15px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 10px 40px -15px rgba(0,0,0,.2);
+	box-shadow: 0 10px 40px -15px rgba(0,0,0,.2);
+	box-sizing: border-box;
+}
+
+.nav-text {
+	font-size: 24px;
+	padding: 11.5px 6%;
+}
+
+.name, .email {
+	float: left;
+}
+
+.name {
+	margin-right: 25px;
+}
+
+.email {
+	font-family: "Trade Gothic LT W01 Extended", Arial, sans-serif;
+	font-size: 13px;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	padding-top: 6px;
+}
+
+.email img {
+	width: 17.5px;
+	margin-right: 7px;
+	padding-top: 2px;
+	vertical-align: text-top;
+}
+
+.top-arrow {
+	cursor: url("sources/cursor/black.png") 8 8, auto;
+	float: right;
+}
+
+.top-arrow:hover {
+	color: #ff351a
+}
+
+@media (max-width: 767px) {
+	.nav-text {
+		font-size: 16px; 
+		padding-top: 17px; }
+	.name {
+		margin-right: 3vw;
+	}
+	.email {
+		font-size: 9px;
+		padding-top: 3px; }
+	.email img {
+		width: 13px; }
+}
+
+
+/* Fixed-Fade */
+
+.fixed {
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-animation: fadein 4.25s;
+	-moz-animation: fadein 4.25s;
+	animation: fadein 4.25s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+
+/* Header */
+
+.site-header {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 4% 6% 0;
+}
+
+.bio {
+	line-height: 1.3;
+	padding: 70px 0 0;
+	margin-bottom: 80px;
+}
+
+.bio .sans, .bio a {
+	cursor: url("sources/cursor/black.png") 8 8, auto;
+	font-family: "Trade Gothic LT W01 Bold Ext", Arial, sans-serif;
+	color: #0a0a0a;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	transition: .2s ease;
+}
+
+.bio .sans:hover, .bio a:hover {
+	color: #ff351a;
+}
+
+@media (max-width: 480px) {
+	.bio {
+		font-size: 25px;
+		letter-spacing: -.86px;
+		line-height: 1.35;
+		padding-top: 17vw; }
+	.bio .sans, .bio a {
+		font-size: 22.3px;
+		letter-spacing: -.93px; }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	.bio {
+		font-size: 32px;
+		letter-spacing: -1.11px;
+		line-height: 1.3; 
+		padding-top: 70px; }
+	.bio .sans, .bio a {
+		font-size: 27px;
+		letter-spacing: -1.15px; }
+}
+@media (min-width: 768px) and (max-width: 1164px) {
+	.bio {
+		font-size: 3.91vw;
+		letter-spacing: -.136vw;
+		line-height: 1.3; }
+	.bio .sans, .bio a {
+		font-size: 3.66vw;
+		letter-spacing: -.15vw; }
+}
+@media (min-width: 1165px) {
+	.bio {
+		font-size: 46px;
+		letter-spacing: -1.6px;
+		padding: 65px 0 0; }
+	.bio .sans, .bio a {
+		font-size: 41.9px;
+		letter-spacing: -1.75px; }
+}
+/* Tablet Padding Height Fix*/
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) {
+	.bio {
+		padding-top: 33% }
+}
+
+.bio-links {
+	max-width: 1200px;
+	overflow: auto;
+	margin: 0 auto 70px auto;
+	padding: 0 6%;
+	vertical-align: top;
+}
+
+@media (max-width: 675px) {
+	.bio-links {
+		margin: -48px auto 0; }
+	h4 {
+		font-size: 10px;
+		letter-spacing: 1.25px;
+		margin-bottom: 4.75px; }
+	.info p {
+		font-size: 17.5px;
+		letter-spacing: -.45px;
+		margin-bottom: 4.7px; }
+	.three-column {
+		width: 100%;
+		text-align: center; }
+	.contact, .social, .other {
+		display: inline-block;
+		margin-bottom: 12px; }
+	.select {
+		display: block;
+		float: none;
+		margin: 1.2vh auto auto;
+		padding-top: 0;
+		text-align: center; }
+}
+@media (min-width: 676px) and (max-width: 949px) {
+	.bio-links {
+		margin: -25px auto 0; }
+	h4 {
+		font-size: 13px;
+		letter-spacing: 1.6px;
+		margin-bottom: 5.85px; }
+	.info p {
+		font-size: 24px;
+		letter-spacing: -.6px;
+		margin-bottom: 5.5px; }
+	.three-column {
+		width: 100%;
+		text-align: center; }
+	.contact, .social, .other {
+		display: inline-block;
+		margin-bottom: 7.5px; }
+	.select {
+		display: block;
+		float: none;
+		margin: 3vh auto auto;
+		text-align: center; }
+}
+@media (min-width: 950px) {
+	h4 {
+		font-size: 13px;
+		letter-spacing: 1.6px;
+		margin-bottom: 5.35px; }
+	.info p {
+		font-size: 24px;
+		letter-spacing: -.6px;
+		margin-bottom: 5px; }
+	.contact {
+		width: 30%;
+		float: left; }
+	.social {
+		width: 20%;
+		float: left; }
+	.other {
+		width: 18%;
+		float: left; }
+	.select {
+		float: right;
+		margin-right: 5%; }
+}
+
+h4 {
+	font-family: "Trade Gothic LT W01 Extended", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.select span {
+	padding-left: .4vw;
+}
+
+
+/* Projects */
+
+.background {
+	background-color: #f2f2f2;
+	width: 100%;
+	position: relative;
+	margin-top: 105vh;
+	padding-top: 25px;
+	z-index: 100;
+	-webkit-box-shadow: 0 12px 40px 0 rgba(0,0,0,.2);
+	-moz-box-shadow: 0 12px 40px 0 rgba(0,0,0,.2);
+	box-shadow: 0 12px 40px 0 rgba(0,0,0,.2);
+}
+
+@media (max-width: 360px) {
+	.fixed {
+		position: relative; }
+	.background {
+		margin-top: 17vh; }
+}
+
+.site-projects {
+	max-width: 1200px;
+	margin: auto;
+	padding: 70px 6%;
+}
+
+.project-info {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 22px;
+}
+
+@media (max-width: 767px) {
+	.project-info {
+		margin-bottom: 18px; }
+}
+
+.project-title {
+	font-family: "Optima LT W01 Roman", Times New Roman, serif;
+}
+
+.project-subhead {
+	font-family: "Trade Gothic LT W01 Extended", Arial, sans-serif;
+}
+
+@media (max-width: 480px) {
+	.project-title {
+		font-size: 25px; }
+	.project-subhead {
+		font-size: 10px;
+		letter-spacing: 1.25px;
+		margin-bottom: 3px; }
+	.project-description {
+		margin-bottom: 16vw;}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	.project-title {
+		font-size: 32px; }
+	.project-subhead {
+		font-size: 10px;
+		letter-spacing: 1.25px;
+		margin-bottom: 3px; }
+	.project-description {
+		margin-bottom: 16vw; }
+}
+@media (min-width: 768px) and (max-width: 1164px) {
+	.project-title {
+		font-size: 3.91vw; }
+	.project-subhead {
+		font-size: 13px;
+		letter-spacing: 1.6px;
+		margin-bottom: 2px; }
+	.project-description {
+		margin-bottom: 120px; }
+}
+@media (min-width: 1165px) {
+	.project-title {
+		font-size: 46px; }
+	.project-subhead {
+		font-size: 13px;
+		letter-spacing: 1.6px;
+		margin-bottom: 2px; }
+	.project-description {
+		margin-bottom: 120px; }
+}
+
+.site-projects p {
+	font-size: 34.5px;
+	line-height: 1.45;
+	margin-bottom: 30px;
+	letter-spacing: -.75px;
+}
+
+.site-projects a {
+	font-family: "Trade Gothic LT W01 Bold Ext", Arial, sans-serif;
+	font-size: 32.5px;
+	letter-spacing: -1.1px;
+}
+
+@media (max-width: 480px) {
+	.site-projects p {
+		font-size: 19px;
+		letter-spacing: -.3px; }
+	.site-projects a {
+		font-size: 17.9px;
+		letter-spacing: -.6px; }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	.site-projects p {
+		font-size: 24px;
+		letter-spacing: -.5px }
+	.site-projects a {
+		font-size: 22.6px;
+		letter-spacing: -.75px; }
+}
+@media (min-width: 768px) and (max-width: 1164px) {
+	.site-projects p {
+		font-size: 31.5px;
+		letter-spacing: -.68px; }
+	.site-projects a {
+		font-size: 29.7px;
+		letter-spacing: -1px; }
+}
+
+.carousel-status, .read-more {
+	font-family: "Trade Gothic LT W01 Extended", Arial, sans-serif;
+	font-size: 13px !important;
+	letter-spacing: 1.6px !important;
+	text-transform: uppercase;
+}
+
+.carousel-status {
+	margin: 22px auto 35px;
+	text-align: center;
+}
+
+.read-more {
+	display: inline;
+	cursor: url("sources/cursor/black.png") 8 8, auto !important;
+	padding-left: .75px;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	transition: .2s ease;
+}
+
+.read-more:hover {
+	color: #ff351a;
+}
+
+@media (max-width: 767px) {
+	.carousel-status, .read-more {
+		font-size: 10px !important;
+		letter-spacing: 1.25px !important; }
+	.carousel-status {
+		margin: 18px auto 28px; }
+}
+
+.full {
+	display: block;
+	line-height: 1.25;
+	margin-top: 10px;
+}
+
+.full p {
+	margin-top: 10px;
+}
+
+/* Flickity */
+
+.project-slider {
+	width: 85%;
+	margin: auto;
+}
+
+@media (max-width: 767px) {
+	.project-slider {
+		width: 100%; }
+}
+
+.carousel-cell {
+	width: 100%;
+}
+
+.carousel-cell img {
+	width: 100%;
+}
+
+.carousel-cell video {
+	width: 100%;
+	height: 100%;
+}
+
+.flickity-prev-next-button {
+	position: absolute;
+	top: 50%;
+	width: 25%;
+	height: 20%;
+	border: none;
+	border-radius: 50%;
+	background: #fff !important;
+	background: transparent !important;
+} 
+
+.flickity-prev-next-button.previous { 
+	left: -.5%; 
+	cursor: url("sources/cursor/prev.png") 16 16, w-resize;
+	height: 99%;
+	width: 33%;
+}
+
+.flickity-prev-next-button.next { 
+	right: -.5%; 
+	cursor: url("sources/cursor/next.png") 16 16, e-resize;
+	height: 99%;
+	width: 33%;
+}
+
+.flickity-prev-next-button .arrow {
+	display: none;
+}
+
+.flickity-page-dots {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.open {
+	display: inline-block;
+}
+
+
+/* Footer */
+
+footer {
+	width: 100%;
+}
+
+footer p {
+	font-family: "Trade Gothic LT W01 Extended", Arial, sans-serif;
+	font-size: 13px !important;
+	letter-spacing: 1.6px !important;
+	text-transform: uppercase;
+	margin: 40px auto 0;
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	footer p {
+		font-size: 10px !important;
+		letter-spacing: 1.25px !important; 
+		margin: 90px auto 0;}
+}
+
