@@ -51,7 +51,7 @@ table {
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
-	cursor: url("sources/cursor/red.png") 16 16, auto;
+	cursor: url("sources/cursor/blackbig.png") 14 14, auto;
 }
 
 body {
@@ -67,7 +67,7 @@ body {
 }
 
 a {
-	cursor: url("sources/cursor/black.png") 8 8, auto;
+	cursor: url("sources/cursor/blacksmall.png") 7 7, auto;
 	color: #0a0a0a;
 	text-decoration: none;
 	-webkit-transition: .2s ease;
@@ -145,7 +145,7 @@ h1 {
 }
 
 .top-arrow {
-	cursor: url("sources/cursor/black.png") 8 8, auto;
+	cursor: url("sources/cursor/blacksmall.png") 7 7, auto;
 	float: right;
 }
 
@@ -210,7 +210,7 @@ h1 {
 }
 
 .bio .sans, .bio a {
-	cursor: url("sources/cursor/black.png") 8 8, auto;
+	cursor: url("sources/cursor/blacksmall.png") 7 7, auto;
 	font-family: "Trade Gothic LT W01 Bold Ext", Arial, sans-serif;
 	color: #0a0a0a;
 	-webkit-transition: .2s ease;
@@ -253,10 +253,10 @@ h1 {
 }
 @media (min-width: 768px) and (max-width: 1164px) and (max-height: 650px) {
 	.site-header {
-		padding: 4vh 6% 0; }
+		padding: 3.5vh 6% 0; }
 	.bio {
 		padding-top: 8.5vh;
-		margin-bottom: 45px; }
+		margin-bottom: 50px; }
 }
 @media (min-width: 1165px) {
 	.bio {
@@ -500,7 +500,7 @@ h4 {
 
 .read-more {
 	display: inline;
-	cursor: url("sources/cursor/black.png") 8 8, auto !important;
+	cursor: url("sources/cursor/blacksmall.png") 7 7, auto !important;
 	padding-left: .75px;
 	-webkit-transition: .2s ease;
 	-moz-transition: .2s ease;

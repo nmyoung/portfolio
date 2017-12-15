@@ -57,7 +57,6 @@ http://flickity.metafizzy.co
 .flickity-rtl .flickity-prev-next-button.next {
   right: auto;
   left: 10px;
-  cursor: url("cursor/yellownext.png"), w-resize;
 }
 
 .flickity-prev-next-button:disabled {
